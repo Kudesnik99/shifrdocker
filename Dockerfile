@@ -1,4 +1,4 @@
-FROM java/8
+FROM java:8
 
 # set a directory for the app
 WORKDIR /usr/sbin
@@ -7,7 +7,7 @@ WORKDIR /usr/sbin
 COPY shifr-0.0.1-SNAPSHOT.jar .
 
 # tell the port number the container should expose
-EXPOSE 8080
+EXPOSE 8083
 
 # run the command
 CMD java -jar shifr-0.0.1-SNAPSHOT.jar
